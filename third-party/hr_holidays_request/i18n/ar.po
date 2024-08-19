@@ -1,0 +1,1176 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_holidays_request
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-24 15:25+0000\n"
+"PO-Revision-Date: 2022-06-24 15:25+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.report_holidayssummary_inherit
+msgid "!important; font-size: 10px\" &gt;"
+msgstr "!مهم; font-size: 10px\" &gt;"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.report_holidayssummary_inherit
+msgid "!important; font-size: 8px; min-width: 18px\"&gt;"
+msgstr "!مهم; font-size: 8px; min-width: 18px\"&gt;"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.report_holidayssummary_inherit
+msgid "&lt;/td&gt;"
+msgstr ""
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.report_holidayssummary_inherit
+msgid "&lt;/th&gt;"
+msgstr ""
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.report_holidayssummary_inherit
+msgid ""
+"&lt;td class=\"text-center oe_leftfit oe_rightfit\" style=\"background-"
+"color:"
+msgstr ""
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.report_holidayssummary_inherit
+msgid "&lt;th class=\"text-center\" colspan="
+msgstr ""
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_allocation_view_form_inherit
+msgid ""
+"<span class=\"ml8\" attrs=\"{'invisible': [('type_request_unit', '=', 'hour')]}\">Days\n"
+"                                    </span>\n"
+"                                    <span class=\"ml8\" attrs=\"{'invisible': [('type_request_unit', '!=', 'hour')]}\">\n"
+"                                        Hours\n"
+"                                    </span>"
+msgstr ""
+"<span class=\"ml8\" attrs=\"{'invisible': [('type_request_unit', '=', 'hour')]}\">أيام\n"
+"                                    </span>\n"
+"                                    <span class=\"ml8\" attrs=\"{'invisible': [('type_request_unit', '!=', 'hour')]}\">\n"
+"                                        ساعات\n"
+"                                    </span>"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_form_inherit
+msgid "<span class=\"ml8\">Days</span>"
+msgstr "<span class=\"ml8\">أيام</span>"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_form_inherit
+msgid "<span class=\"ml8\">Hours</span>"
+msgstr "<span class=\"ml8\">ساعات</span>"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_form_inherit
+msgid ""
+"<span class=\"oe_inline\" attrs=\"{'invisible': ['|', ('request_unit_half', '=', True), ('request_unit_hours', '=', True)]}\">\n"
+"                                            To\n"
+"                                        </span>"
+msgstr ""
+"<span class=\"oe_inline\" attrs=\"{'invisible': ['|', ('request_unit_half', '=', True), ('request_unit_hours', '=', True)]}\">\n"
+"                                            إلى\n"
+"                                        </span>"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_kanban_inherit
+msgid "<span class=\"text-muted\">from</span>"
+msgstr "<span class=\"text-muted\">من</span>"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_kanban_inherit
+msgid "<span class=\"text-muted\">to</span>"
+msgstr "<span class=\"text-muted\">إلى </span>"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.report_holidayssummary_inherit
+msgid "<strong>Departments and Employees</strong>"
+msgstr "<strong>الأقسام و الموظفين </strong>"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_type__availability
+msgid "Aavailability of last stock"
+msgstr "صلاحية رصيد السنة الفارطة"
+
+#. module: hr_holidays_request
+#: model:ir.actions.server,name:hr_holidays_request.action_accept_holidays_requests
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_allocation_view_form_inherit
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_form_inherit
+msgid "Accept"
+msgstr "موافق"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__message_needaction
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__message_needaction
+msgid "Action Needed"
+msgstr "إجراء مطلوب"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__active
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__active
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_type__active
+msgid "Active"
+msgstr "نشط"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__activity_ids
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__activity_ids
+msgid "Activities"
+msgstr "الأنشطة"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__activity_exception_decoration
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة استثناء النشاط"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__activity_state
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__activity_type_icon
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "أيقونة نوع النشاط"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_allocation_view_form_inherit
+msgid "Add a reason..."
+msgstr "إضافة سبب ..."
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_allocation_view_form_inherit
+msgid "Allocation Request"
+msgstr "طلب تخصيص"
+
+#. module: hr_holidays_request
+#: model:ir.ui.menu,name:hr_holidays_request.hr_leave_allocation_stage_menu
+msgid "Allocation Stages"
+msgstr "مراحل المخصصات"
+
+#. module: hr_holidays_request
+#: model:mail.activity.type,name:hr_holidays_request.mail_hr_leave_allocation_feedback
+msgid "Allocation is done"
+msgstr "طلب التخصيص معتمد"
+
+#. module: hr_holidays_request
+#: code:addons/hr_holidays_request/models/hr_leave_allocation.py:0
+#, python-format
+msgid "Allocation of %s : %.2f day(s) to %s"
+msgstr "تخصيص %s : %.2f أيام إلى %s"
+
+#. module: hr_holidays_request
+#: code:addons/hr_holidays_request/models/hr_leave_allocation.py:0
+#, python-format
+msgid "Allocation of %s : %.2f hour(s) to %s"
+msgstr "تخصيص %s : %.2f ساعات إلى %s"
+
+#. module: hr_holidays_request
+#: model:ir.actions.act_window,name:hr_holidays_request.hr_leave_allocation_action_my_service
+#: model:ir.ui.menu,name:hr_holidays_request.hr_leave_allocation_menu
+#: model:ir.ui.menu,name:hr_holidays_request.hr_leave_allocation_menu_my_service
+#: model:ir.ui.menu,name:hr_holidays_request.hr_leave_allocation_menu_root
+msgid "Allocations"
+msgstr "المخصصات"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.report_holidayssummary_inherit
+msgid "Analyze from"
+msgstr "تحليل من"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__employee_id
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__employee_id
+msgid "Applicant"
+msgstr "الموظف"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields.selection,name:hr_holidays_request.selection__hr_holidays_summary_employee__holiday_type__approved
+#: model:ir.model.fields.selection,name:hr_holidays_request.selection__hr_leave__state__validate
+#: model:ir.model.fields.selection,name:hr_holidays_request.selection__hr_leave_allocation__state__validate
+#: model:mail.message.subtype,name:hr_holidays_request.mt_hr_leave_allocation_approved
+#: model:mail.message.subtype,name:hr_holidays_request.mt_hr_leave_approved
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.report_holidayssummary_inherit
+msgid "Approved"
+msgstr "معتمد"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.view_hr_holidays_filter_inherited
+msgid "Archived"
+msgstr "مؤرشفة"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_allocation_view_form_inherit
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_form_inherit
+msgid "Are you sure you want to do this?"
+msgstr "هل انت متأكد من أنك تريد أن تفعل هذا؟"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__message_attachment_count
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__attachment_ids
+msgid "Attachments"
+msgstr "المرفقات"
+
+#. module: hr_holidays_request
+#: model:ir.model,name:hr_holidays_request.model_hr_employee_base
+msgid "Basic Employee"
+msgstr "الموظف الأساسي"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__is_before_specific_date
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_type__is_before_specific_date
+msgid "Before specified date"
+msgstr "عدد الايام قبل التاريخ الحدث"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields.selection,name:hr_holidays_request.selection__hr_leave_type__for_gender__both
+msgid "Both"
+msgstr "كلا الجنسين"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields.selection,name:hr_holidays_request.selection__hr_holidays_summary_employee__holiday_type__both
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.report_holidayssummary_inherit
+msgid "Both Approved and In progress of Confirmation"
+msgstr "تم قبولها وقيد التأكيد"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_type__without_current_sold
+msgid "Can take without current sold"
+msgstr "يمكن تقديم الطلب بدون رصيد"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__display_button_cancel
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_form_inherit
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_form_inherit
+msgid "Canceled"
+msgstr "ملغى"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.report_holidayssummary_inherit
+msgid "Color"
+msgstr "اللون"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__mode_company_id
+msgid "Company Mode"
+msgstr "وضع الشركة "
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_type__count_weekend
+msgid "Count Weekend"
+msgstr "إحتساب عطلة الاسبوع"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_type__count_public_holidays
+msgid "Count public holidays"
+msgstr "إحتساب الإجازات الرسمية والأعياد"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_employee__current_leave_state
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_employee_base__current_leave_state
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_employee_public__current_leave_state
+msgid "Current Time Off Status"
+msgstr "حالة الإجازة الحالية"
+
+#. module: hr_holidays_request
+#: model:ir.actions.act_window,name:hr_holidays_request.hr_leave_action_my_dashboard
+#: model:ir.ui.menu,name:hr_holidays_request.hr_holidays_dashboard_menu
+#: model:ir.actions.act_window,name:hr_holidays_request.hr_leave_action_new_custom_request
+msgid "Dashboard"
+msgstr "لوحة المعلومات"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__date_last_number_of_days
+msgid "Date update solde of last year"
+msgstr " تحديث تاريخ رصيد  العام الماضي"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_allocation_view_kanban_inherit_extend
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_kanban_inherit
+msgid "Delete"
+msgstr "حذف"
+
+#. module: hr_holidays_request
+#: model:ir.model,name:hr_holidays_request.model_hr_department
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__department_id
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__department_id
+msgid "Department"
+msgstr "القسم"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_type__depassed_trial_period
+msgid "Depassed Trial Period"
+msgstr "تجاوز فترة التجربة"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__name
+msgid "Description"
+msgstr "الوصف"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__display_button_accept
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__display_button_accept
+msgid "Display Button Accept"
+msgstr "عرض  زر الموافقة"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__display_button_previous
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__display_button_previous
+msgid "Display Button Previous"
+msgstr ""
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__display_button_refuse
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__display_button_refuse
+msgid "Display Button Refuse"
+msgstr " عرض  زر الرفض"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__display_button_send
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__display_button_send
+msgid "Display Button Send"
+msgstr "عرض زر الإرسال"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_department__display_name
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_employee_base__display_name
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_holidays_summary_employee__display_name
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__display_name
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__display_name
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_report__display_name
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_report_calendar__display_name
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_type__display_name
+#: model:ir.model.fields,field_description:hr_holidays_request.field_report_hr_holidays_report_holidayssummary__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields.selection,name:hr_holidays_request.selection__hr_employee__current_leave_state__done
+#: model:ir.model.fields.selection,name:hr_holidays_request.selection__hr_employee_base__current_leave_state__done
+#: model:ir.model.fields.selection,name:hr_holidays_request.selection__hr_employee_public__current_leave_state__done
+#: model:ir.model.fields.selection,name:hr_holidays_request.selection__hr_leave_report__state__done
+#: model:ir.model.fields.selection,name:hr_holidays_request.selection__hr_leave_report_calendar__state__done
+#: model:request.stage,name:hr_holidays_request.hr_leave_allocation_stage_done
+#: model:request.stage,name:hr_holidays_request.hr_leave_stage_done
+msgid "Done"
+msgstr "معتمد"
+
+#. module: hr_holidays_request
+#: model:request.stage,name:hr_holidays_request.hr_leave_allocation_stage_draft
+#: model:request.stage,name:hr_holidays_request.hr_leave_stage_draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_allocation_view_kanban_inherit_extend
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_kanban_inherit
+msgid "Dropdown menu"
+msgstr "القائمة المنسدلة"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_allocation_view_form_inherit
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_form_inherit
+msgid "Duration"
+msgstr "المدة"
+
+#. module: hr_holidays_request
+#: code:addons/hr_holidays_request/models/hr_leave.py:0
+#, python-format
+msgid ""
+"During the test period, it is not permitted to submit a leave application"
+msgstr "خلال فترة التجربة ، لا يُسمح بتقديم طلب إجازة"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_allocation_view_kanban_inherit_extend
+msgid "Edit Allocation"
+msgstr " تعديل التخصيص"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_kanban_inherit
+msgid "Edit Time Off"
+msgstr "تعديل طلب إجازة"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_tree_inherit
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_allocation_view_form_inherit
+msgid "Extra days"
+msgstr "أيام اضافية"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields.selection,name:hr_holidays_request.selection__hr_leave_type__for_gender__female
+msgid "Female"
+msgstr "أنثى"
+
+#. module: hr_holidays_request
+#: code:addons/hr_holidays_request/models/hr_leave.py:0
+#, python-format
+msgid "Females"
+msgstr "النساء"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__message_follower_ids
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__message_channel_ids
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "المتابعون (القنوات)"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__message_partner_ids
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave__activity_type_icon
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave_allocation__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "رمز الخط الرائع ، على سبيل المثال FA- المهام"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_type__for_gender
+msgid "For"
+msgstr "بالنسبة ل"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_form_inherit
+msgid "From"
+msgstr "من"
+
+#. module: hr_holidays_request
+#: model:ir.model,name:hr_holidays_request.model_hr_holidays_summary_employee
+msgid "HR Time Off Summary Report By Employee"
+msgstr "تقرير الإجازات حسب الموظف"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__holiday_address
+msgid "Holiday Address"
+msgstr "العنوان في الإجازة"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__holiday_phone
+msgid "Holiday Phone"
+msgstr "رقم الإتصال في الإجازة"
+
+#. module: hr_holidays_request
+#: code:addons/hr_holidays_request/models/hr_leave.py:0
+#, python-format
+msgid "Holiday phone should contains only numbers."
+msgstr "يجب أن يحتوي رقم الإتصال في الإجازة على أرقام فقط."
+
+#. module: hr_holidays_request
+#: model:ir.model,name:hr_holidays_request.model_report_hr_holidays_report_holidayssummary
+msgid "Holidays Summary Report"
+msgstr "تقرير ملخص العطلات"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_department__id
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_employee_base__id
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_holidays_summary_employee__id
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__id
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__id
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_report__id
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_report_calendar__id
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_type__id
+#: model:ir.model.fields,field_description:hr_holidays_request.field_report_hr_holidays_report_holidayssummary__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__activity_exception_icon
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__activity_exception_icon
+msgid "Icon"
+msgstr "الأيقونة"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave__activity_exception_icon
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave_allocation__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "الأيقونة للإشارة إلى استثناء النشاط"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave__message_needaction
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave__message_unread
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave_allocation__message_needaction
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave_allocation__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "إذا كان محددًا، فهناك رسائل جديدة تحتاج لرؤيتها."
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave__message_has_error
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave__message_has_sms_error
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave_allocation__message_has_error
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave_allocation__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا كان محددًا، فقد حدث خطأ في تسليم بعض الرسائل."
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave_type__active
+msgid ""
+"If the active field is set to false, it will allow you to hide the time off "
+"type without removing it."
+msgstr ""
+"إذا تم تعيين قيمة الحقل النشط كخطأ، سوف يتيح- لك إخفاء نوع الإجازة دون "
+"إزالتها. "
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_form_inherit
+msgid "In"
+msgstr "في"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields.selection,name:hr_holidays_request.selection__hr_employee__current_leave_state__in_progress
+#: model:ir.model.fields.selection,name:hr_holidays_request.selection__hr_employee_base__current_leave_state__in_progress
+#: model:ir.model.fields.selection,name:hr_holidays_request.selection__hr_employee_public__current_leave_state__in_progress
+#: model:ir.model.fields.selection,name:hr_holidays_request.selection__hr_leave_report__state__in_progress
+#: model:ir.model.fields.selection,name:hr_holidays_request.selection__hr_leave_report_calendar__state__in_progress
+msgid "In progress"
+msgstr "جاري"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields.selection,name:hr_holidays_request.selection__hr_holidays_summary_employee__holiday_type__confirmed
+msgid "In progress of Confirmation"
+msgstr "قيد التأكيد"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.report_holidayssummary_inherit
+msgid "In progress of confirmation"
+msgstr "قيد التأكيد"
+
+#. module: hr_holidays_request
+#: model:res.groups,name:hr_holidays_request.make_invisible
+msgid "Invisible"
+msgstr "مخفي"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__message_is_follower
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: hr_holidays_request
+#: code:addons/hr_holidays_request/models/hr_leave.py:0
+#, python-format
+msgid "It is not possible to apply on public holidays and holidays."
+msgstr "لا يمكن التقديم في أيام الإجازات الرسمية والأعياد"
+
+#. module: hr_holidays_request
+#: code:addons/hr_holidays_request/models/hr_leave.py:0
+#, python-format
+msgid "It is not possible to apply on weekends."
+msgstr "لا يمكن التقديم في أيام الإجازات الأسبوعية"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__job_id
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__job_id
+msgid "Job"
+msgstr "وظيفة"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__number
+msgid "Job number"
+msgstr "الرقم الوظيفي"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__kanban_color
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__kanban_color
+msgid "Kanban Color Index"
+msgstr "مؤشر لون كانبان"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_department____last_update
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_employee_base____last_update
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_holidays_summary_employee____last_update
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave____last_update
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation____last_update
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_report____last_update
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_report_calendar____last_update
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_type____last_update
+#: model:ir.model.fields,field_description:hr_holidays_request.field_report_hr_holidays_report_holidayssummary____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__message_main_attachment_id
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields.selection,name:hr_holidays_request.selection__hr_leave_type__for_gender__male
+msgid "Male"
+msgstr "ذكر"
+
+#. module: hr_holidays_request
+#: code:addons/hr_holidays_request/models/hr_leave.py:0
+#, python-format
+msgid "Males"
+msgstr "الرجال"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__manager_id
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__manager_id
+msgid "Manager"
+msgstr "المدير"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_type__maximum_days
+msgid "Maximum Days"
+msgstr "الحد الأقصى من الأيام"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__message_has_error
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسائل"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__message_ids
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.report_holidayssummary_inherit
+msgid "Month"
+msgstr "الشهر"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__my_activity_date_deadline
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__activity_date_deadline
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__activity_summary
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__activity_type_id
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_type__holidays_including_weekend_public
+msgid "Not to allow submission on weekends, official holidays and holidays"
+msgstr "عدم السماح بتقديم في أيام الإجازات الأسبوعية والرسمية والأعياد"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__name
+msgid "Number"
+msgstr "المسمى"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_type__days_before_specific_date
+msgid "Number Days before specified date"
+msgstr "عدد الأيام"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__message_needaction_counter
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: hr_holidays_request
+#: code:addons/hr_holidays_request/models/hr_leave_allocation.py:0
+#, python-format
+msgid "Number of days should be less than maximum days of holidays type"
+msgstr "المدة يجب أن تكون أصغر من الحد الأقصى للأيام في نوع الإجازة"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__message_has_error_counter
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الاخطاء"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave__message_needaction_counter
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave_allocation__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب إجراء"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave__message_has_error_counter
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave_allocation__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل الحادث بها خطأ في التسليم"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__interval_number
+msgid "Number of unit between two intervals"
+msgstr "عدد الوحدات بين فترتين"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__number_per_interval
+msgid "Number of unit per interval"
+msgstr "عدد الوحدات في الفترة"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave__message_unread_counter
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave_allocation__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل الجديدة"
+
+#. module: hr_holidays_request
+#: code:addons/hr_holidays_request/models/hr_leave.py:0
+#, python-format
+msgid "Please attach the necessary documents."
+msgstr "الرجاء إرفاق الوثائق اللازمة."
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__refuse_reason
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__refuse_reason
+msgid "Refusal reason"
+msgstr "سبب الرفض"
+
+#. module: hr_holidays_request
+#: model:ir.actions.server,name:hr_holidays_request.action_refuse_holidays_requests
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_allocation_view_form_inherit
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_form_inherit
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields.selection,name:hr_holidays_request.selection__hr_leave__state__refuse
+#: model:ir.model.fields.selection,name:hr_holidays_request.selection__hr_leave_allocation__state__refuse
+#: model:mail.message.subtype,name:hr_holidays_request.mt_hr_leave_allocation_refused
+#: model:mail.message.subtype,name:hr_holidays_request.mt_hr_leave_refused
+#: model:request.stage,name:hr_holidays_request.hr_leave_allocation_stage_refuse
+#: model:request.stage,name:hr_holidays_request.hr_leave_stage_refuse
+msgid "Refused"
+msgstr "مرفوض"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__remaining_leaves
+msgid "Remaining Time Off"
+msgstr "المدة المتبقية"
+
+#. module: hr_holidays_request
+#: model:mail.activity.type,name:hr_holidays_request.mail_hr_leave_allocation_approval
+#: model:mail.activity.type,name:hr_holidays_request.mail_hr_leave_approval
+msgid "Request Approval"
+msgstr "طلب للموافقة"
+
+#. module: hr_holidays_request
+#: model:mail.message.subtype,description:hr_holidays_request.mt_hr_leave_allocation_approved
+#: model:mail.message.subtype,description:hr_holidays_request.mt_hr_leave_approved
+msgid "Request approved"
+msgstr "تم الموافقة على الطلب"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__date
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__date
+msgid "Request date"
+msgstr "تاريخ الطلب"
+
+#. module: hr_holidays_request
+#: model:mail.message.subtype,description:hr_holidays_request.mt_hr_leave_allocation_refused
+#: model:mail.message.subtype,description:hr_holidays_request.mt_hr_leave_refused
+msgid "Request refused"
+msgstr "طلب مرفوض"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__activity_user_id
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__message_has_sms_error
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل القصيرة"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields.selection,name:hr_holidays_request.selection__hr_leave__state__validate1
+#: model:ir.model.fields.selection,name:hr_holidays_request.selection__hr_leave_allocation__state__validate1
+msgid "Second Approval"
+msgstr "الموافقة الثانية"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_holidays_summary_employee__holiday_type
+msgid "Select Time Off Type"
+msgstr "حدد نوع الإجازة"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_allocation_view_form_inherit
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_form_inherit
+msgid "Send"
+msgstr "إرسال"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__last_number_of_days
+msgid "Solde of last year"
+msgstr "رصيد العام الفارط"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__specific_date
+msgid "Specific Date"
+msgstr "تاريخ الحدث"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__stage_id
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__stage_id
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_allocation_view_tree_inherit_extend
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_tree_inherit
+msgid "Stage"
+msgstr "المرحلة"
+
+#. module: hr_holidays_request
+#: model:ir.actions.act_window,name:hr_holidays_request.hr_leave_allocation_stage_action
+#: model:ir.actions.act_window,name:hr_holidays_request.hr_leave_stage_action
+msgid "Stages"
+msgstr "المراحل"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__state
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__state
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_report_calendar__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_report__state
+msgid "Status"
+msgstr "الحالة"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave__activity_state
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave_allocation__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الحالة على أساس الأنشطة\n"
+"المتأخرة: تاريخ الاستحقاق مر\n"
+"اليوم: تاريخ النشاط هو اليوم\n"
+"المخطط: الأنشطة المستقبلية."
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__substitute_employee_id
+msgid "Substitute Employee"
+msgstr "الموظف البديل"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.report_holidayssummary_inherit
+msgid "Sum"
+msgstr "المجموع"
+
+#. module: hr_holidays_request
+#: code:addons/hr_holidays_request/models/hr_leave_allocation.py:0
+#, python-format
+msgid "The employee %s has allocation for holiday type %s"
+msgstr "الموظف %s لديه تخصيص لنوع الإجازة %s"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__is_start_specific_date
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_type__is_start_specific_date
+msgid "The number of days starting from specific date"
+msgstr "عدد الايام ابتداء من التاريخ المحدد"
+
+#. module: hr_holidays_request
+#: code:addons/hr_holidays_request/models/hr_leave.py:0
+#: code:addons/hr_holidays_request/models/hr_leave.py:0
+#: code:addons/hr_holidays_request/models/hr_leave.py:0
+#: code:addons/hr_holidays_request/models/hr_leave.py:0
+#, python-format
+msgid ""
+"The number of remaining time off is not sufficient for this time off type.\n"
+"Please also check the time off waiting for validation."
+msgstr ""
+"عدد الإجازات المتبقية غير كافٍ لهذا النوع من الإجازات.\n"
+"يُرجى أيضًا التحقق من الإجازة بانتظار التحقق من الصحة."
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave__state
+msgid ""
+"The status is set to 'To Submit', when a time off request is created.\n"
+"The status is 'To Approve', when time off request is confirmed by user.\n"
+"The status is 'Refused', when time off request is refused by manager.\n"
+"The status is 'Approved', when time off request is approved by manager."
+msgstr ""
+"يتم تعين الحالة إلى 'للإرسال'، عندما يتم إنشاء طلب إجازة.\n"
+"تكون الحالة 'للموافقة'، عندما تتم الموافقة على طلب الإجازة من قِبَل المستخدم.\n"
+"تكون الحالة 'تم الرفض'، عندما يتم رفض طلب الإجازة من قِبَل المدير.\n"
+"تكون الحالة 'تمت الموافقة'، عندما تتم الموافقة على طبي الإجازة من قِبَل المدير."
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave_allocation__state
+msgid ""
+"The status is set to 'To Submit', when an allocation request is created.\n"
+"The status is 'To Approve', when an allocation request is confirmed by user.\n"
+"The status is 'Refused', when an allocation request is refused by manager.\n"
+"The status is 'Approved', when an allocation request is approved by manager."
+msgstr ""
+
+#. module: hr_holidays_request
+#: code:addons/hr_holidays_request/models/hr_leave.py:0
+#, python-format
+msgid "The vacation period has exceeded contract end date."
+msgstr "فترة الإجازة تجاوزت مدة العقد"
+
+#. module: hr_holidays_request
+#: model:ir.model,name:hr_holidays_request.model_hr_leave
+msgid "Time Off"
+msgstr "الاجازات"
+
+#. module: hr_holidays_request
+#: model:ir.model,name:hr_holidays_request.model_hr_leave_allocation
+msgid "Time Off Allocation"
+msgstr "تخصيص إجازة"
+
+#. module: hr_holidays_request
+#: code:addons/hr_holidays_request/report/hr_leave_report.py:0
+#, python-format
+msgid "Time Off Analysis"
+msgstr "تحليل رصيد الإجازات"
+
+#. module: hr_holidays_request
+#: model:ir.model,name:hr_holidays_request.model_hr_leave_report_calendar
+msgid "Time Off Calendar"
+msgstr "تقويم الإجازات"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_form_inherit
+msgid "Time Off Request"
+msgstr "طلب إجازة"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.report_holidayssummary_inherit
+msgid "Time Off Summary"
+msgstr "تقرير الإجازات"
+
+#. module: hr_holidays_request
+#: model:ir.model,name:hr_holidays_request.model_hr_leave_report
+msgid "Time Off Summary / Report"
+msgstr "تقرير الإجازات"
+
+#. module: hr_holidays_request
+#: model:ir.model,name:hr_holidays_request.model_hr_leave_type
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__holiday_status_id
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__holiday_status_id
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.report_holidayssummary_inherit
+msgid "Time Off Type"
+msgstr "نوع الإجازة"
+
+#. module: hr_holidays_request
+#: model:ir.actions.act_window,name:hr_holidays_request.hr_leave_action_my_leaves
+#: model:ir.ui.menu,name:hr_holidays_request.hr_leave_menu_my
+#: model:ir.ui.menu,name:hr_holidays_request.hr_leave_menu_root_my
+msgid "Time off"
+msgstr "الإجازات"
+
+#. module: hr_holidays_request
+#: model:ir.ui.menu,name:hr_holidays_request.hr_leave_stage_menu
+msgid "Time off Stages"
+msgstr "مراحل الاجازات "
+
+#. module: hr_holidays_request
+#: model:mail.activity.type,name:hr_holidays_request.mail_hr_leave_feedback
+msgid "Time off is done"
+msgstr "طلب إجازة معتمد"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_form_inherit
+msgid "To"
+msgstr "إلى"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields.selection,name:hr_holidays_request.selection__hr_leave__state__confirm
+#: model:ir.model.fields.selection,name:hr_holidays_request.selection__hr_leave_allocation__state__confirm
+msgid "To Approve"
+msgstr "للاعتماد"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__request_type_id
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__request_type_id
+msgid "Type"
+msgstr "نوع"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave__activity_exception_decoration
+#: model:ir.model.fields,help:hr_holidays_request.field_hr_leave_allocation__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع النشاط الاستثنائي المسجل."
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__unit_per_interval
+msgid "Unit of time added at each interval"
+msgstr "الوحدة الزمنية المضافة لكل فترة"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__interval_unit
+msgid "Unit of time between two intervals"
+msgstr "الوحدة الزمنية بين فترتين"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__message_unread
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__message_unread
+msgid "Unread Messages"
+msgstr "الرسائل الجديدة"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave__message_unread_counter
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_allocation__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عدد الرسائل الجديدة"
+
+#. module: hr_holidays_request
+#: model:ir.actions.server,name:hr_holidays_request.ir_cron_hr_leave_allocation_update_last_year_stock_ir_actions_server
+#: model:ir.cron,cron_name:hr_holidays_request.ir_cron_hr_leave_allocation_update_last_year_stock
+#: model:ir.cron,name:hr_holidays_request.ir_cron_hr_leave_allocation_update_last_year_stock
+msgid "Update last year stock"
+msgstr "تحديث رصيد  العام الماضي"
+
+#. module: hr_holidays_request
+#: model:request.stage,name:hr_holidays_request.hr_leave_allocation_stage_validate
+#: model:request.stage,name:hr_holidays_request.hr_leave_stage_validate
+msgid "Validate"
+msgstr "تأكيد"
+
+#. module: hr_holidays_request
+#: code:addons/hr_holidays_request/models/hr_leave.py:0
+#, python-format
+msgid "You are not permitted to submit a leave application."
+msgstr "لا يسمح لك بتقديم طلب إجازة."
+
+#. module: hr_holidays_request
+#: code:addons/hr_holidays_request/models/hr_leave.py:0
+#, python-format
+msgid "You can not have 2 leaves that overlaps on the same day."
+msgstr "لا يمكنك أخذ إجازتين في نفس اليوم."
+
+#. module: hr_holidays_request
+#: code:addons/hr_holidays_request/models/hr_leave.py:0
+#, python-format
+msgid "You can only request %s days."
+msgstr "يمكنك طلب %s أيام فقط"
+
+#. module: hr_holidays_request
+#: code:addons/hr_holidays_request/models/hr_leave.py:0
+#, python-format
+msgid "You can request a holiday %s days from the specific date."
+msgstr "يمكنك طلب  إجازة %s أيام  من تاريخ الحدث."
+
+#. module: hr_holidays_request
+#: code:addons/hr_holidays_request/models/hr_leave.py:0
+#, python-format
+msgid "You should request a holiday before %s days from the specific date."
+msgstr "يجب عليك طلب إجازة قبل %s أيام من تاريخ الحدث"
+
+#. module: hr_holidays_request
+#: code:addons/hr_holidays_request/models/hr_leave.py:0
+#, python-format
+msgid "Your %s planned on %s has been refused"
+msgstr "تم رفض %s المخطط الخاص بك في %s"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_hr_leave_type__attachment_required
+msgid "attachments is necessary"
+msgstr "إرفاق مرفقات ضروري"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_allocation_view_kanban_inherit_extend
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_kanban_inherit
+msgid "days"
+msgstr "أيام"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_allocation_view_kanban_inherit_extend
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_kanban_inherit
+msgid "done"
+msgstr "منجز"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.report_holidayssummary_inherit
+msgid "of the Time Off"
+msgstr " من الاجازات "
+
+#. module: hr_holidays_request
+#: code:addons/hr_holidays_request/models/hr_leave.py:0
+#, python-format
+msgid "only %s can take %s "
+msgstr "يمكن فقط ل %s  طلب %s"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.report_holidayssummary_inherit
+msgid "to"
+msgstr "إلى"
+
+#. module: hr_holidays_request
+#: model:ir.model.fields,field_description:hr_holidays_request.field_request_stage__hr_leave_type_ids
+msgid "Types "
+msgstr "الأنواع"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_form_inherit
+msgid "Return to previous stage"
+msgstr "إعادة للمرحلة السابقة"
+
+#. module: hr_holidays_request
+#: model_terms:ir.ui.view,arch_db:hr_holidays_request.hr_leave_view_form_inherit
+msgid "Attachments"
+msgstr "المرفقات"
+
+#. module: hr_holidays_request
+#: model:ir.actions.act_window,name:hr_holidays_request.hr_leave_action_my_request
+#: model:ir.actions.act_window,name:hr_holidays_request.hr_leave_request_action_my
+msgid "My Time Off Requests"
+msgstr "إجازتي"
+
+#. module: hr_holidays_request
+#: model_terms:ir.actions.act_window,help:hr_holidays_request.hr_leave_action_my_request
+#: model_terms:ir.actions.act_window,help:hr_holidays_request.hr_leave_action_new_custom_request
+msgid "Keep track of your PTOs."
+msgstr "تمكن من متابعة أيام إجازتك المدفوعة. "
+
+#. module: hr_holidays_request
+#: model_terms:ir.actions.act_window,help:hr_holidays_request.hr_leave_action_my_request
+#: model_terms:ir.actions.act_window,help:hr_holidays_request.hr_leave_action_new_custom_request
+msgid ""
+"A great way to keep track on your time off requests, sick days, and approval"
+" status."
+msgstr "طريقة رائعة لمتابعة طلبات الإجازة والإجازات المرضية وحالات الموافقة. "
+

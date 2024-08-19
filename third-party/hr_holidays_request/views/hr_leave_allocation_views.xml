@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<odoo>
+
+    <record id="view_hr_leave_allocation_filter_inherit_extend" model="ir.ui.view">
+        <field name="name">hr.holidays.filter_allocations.inherit</field>
+        <field name="model">hr.leave.allocation</field>
+        <field name="inherit_id" ref="hr_holidays.view_hr_leave_allocation_filter" />
+        <field name="arch" type="xml">
+            <filter name="validated" position="attributes">
+                <attribute name="domain">[('state', '=', 'done')]</attribute>
+            </filter>
+            <xpath expr="//searchpanel/field[@name='state']" position="replace">
+                <field name="stage_id" />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="hr_leave_allocation_view_form_inherit" model="ir.ui.view">
+        <field name="name">hr.leave.allocation.view.form.inherit</field>
+        <field name="model">hr.leave.allocation</field>
+        <field name="inherit_id" ref="hr_holidays.hr_leave_allocation_view_form" />
+        <field name="priority">-100</field>
+        <field name="arch" type="xml">
+            <form position="replace">
+                <form string="Allocation Request">
+                    <!-- <field name="can_reset" invisible="1" /> -->
+                    <field name="can_approve" invisible="1" />
+                    <field name="holiday_type" invisible="1" />
+                    <field name="active" invisible="1" />
+                    <header>
+                        <button name="action_confirm" invisible="1" />
+
+                        <button
+                            name="action_send"
+                            class="btn-success"
+                            string="Send"
+                            type="object"
+                            invisible="display_button_send == False"
+                        />
+
+                        <button
+                            name="action_accept"
+                            class="btn-success"
+                            string="Accept"
+                            type="object"
+                            invisible="display_button_accept == False"
+                        />
+
+                       <button
+                            name="%(request_refuse.action_refuse_wizard)d"
+                            context="{'action_name': 'action_refuse','field_name': 'refuse_reason'}"
+                            string="Refuse"
+                            class="btn-danger"
+                            type="action"
+                            confirm="Are you sure you want to do this?"
+                            invisible="display_button_refuse == False"
+                        />
+
+                        <field name="state" invisible="1" />
+                        <field name="display_button_send" invisible="1" />
+                        <field name="display_button_accept" invisible="1" />
+                        <field name="display_button_refuse" invisible="1" />
+                        <field name="request_type_id" invisible="1" />
+                        <field name="stage_id" widget="statusbar" options="{'fold_field': 'fold'}" />
+                    </header>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+
+                        </div>
+                        <div class="oe_title">
+                            <h2>
+                                <field name="display_name" />
+                            </h2>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="type_request_unit" invisible="1" />
+                                <field
+                                    name="name"
+                                    readonly="state not in ['draft', 'confirm']"
+                                    required="1"
+                                />
+                                <field name="holiday_status_id" context="{'employee_id':employee_id}" />
+
+                                <field name="allocation_type" invisible="1" widget="radio" />
+
+                                <field name="number_of_days" invisible="1" />
+                                <div class="o_td_label">
+                                    <label
+                                        for="number_of_days"
+                                        string="Duration"
+                                        invisible="allocation_type == 'accrual'"
+                                    />
+                                    <label
+                                        for="number_of_days"
+                                        string="Extra days"
+                                        invisible="allocation_type != 'accrual'"
+                                    />
+                                </div>
+                                <div>
+                                    <field
+                                        name="number_of_days_display"
+                                        class="oe_inline"
+                                        nolabel="1"
+                                        readonly="type_request_unit == 'hour' or state not in ['draft', 'confirm']" invisible="type_request_unit == 'hour'"
+                                    />
+                                    <field
+                                        name="number_of_hours_display"
+                                        class="oe_inline"
+                                        nolabel="1"
+                                        readonly="type_request_unit != 'hour' or state not in ['draft', 'confirm']" invisible="type_request_unit != 'hour'"
+                                    />
+                                    <span class="ml8" invisible="type_request_unit == 'hour'">Days
+                                    </span>
+                                    <span class="ml8" invisible="type_request_unit != 'hour'">
+                                        Hours
+                                    </span>
+                                </div>
+                                <field name="remaining_leaves" invisible="employee_id == False" />
+                                <field
+                                    name="last_number_of_days"
+                                    invisible="employee_id == False"
+                                    readonly="1"
+                                    force_save="1"
+                                />
+                                 <field name="date_last_number_of_days" invisible="1" />
+                                <field name="nextcall" invisible="1" force_save="1" readonly="1" />
+                            </group>
+                            <group name="alloc_right_col">
+                                <field name="employee_id" invisible="1" groups="hr_holidays.group_hr_holidays_user" />
+                                <field name="department_id" invisible="1" />
+                                <field name="refuse_reason" invisible="state != 'cancel'" />
+                            </group>
+                        </group>
+                        <field name="notes" nolabel="1" placeholder="Add a reason..." />
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" />
+                        <field name="activity_ids" widget="mail_activity" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </form>
+        </field>
+    </record>
+
+
+    <!-- <record id="hr_leave_allocation_view_form_manager_inherit_extend" model="ir.ui.view">
+        <field name="name">hr.leave.allocation.view.form.manager.inherit</field>
+        <field name="model">hr.leave.allocation</field>
+        <field name="inherit_id" ref="hr_holidays.hr_leave_allocation_view_form_manager" />
+        <field name="mode">primary</field>
+        <field name="priority">16</field>
+        <field name="arch" type="xml">
+            <button name="action_approve" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </button>
+
+            <button name="action_validate" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </button>
+
+            <button name="action_refuse" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </button>
+            <button name="action_draft" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </button>
+        </field>
+    </record> -->
+
+
+    <record id="hr_leave_allocation_view_tree_inherit_extend" model="ir.ui.view">
+        <field name="name">hr.leave.view.tree.inherit</field>
+        <field name="model">hr.leave.allocation</field>
+        <field name="inherit_id" ref="hr_holidays.hr_leave_allocation_view_tree" />
+        <field name="arch" type="xml">
+            <field name="state" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+            <field name="state" position="after">
+                <field name="stage_id" string="Stage" />
+            </field>
+        </field>
+    </record>
+
+    <record id="hr_leave_allocation_view_kanban_inherit_extend" model="ir.ui.view">
+        <field name="name">hr.leave.allocation.view.kanban</field>
+        <field name="model">hr.leave.allocation</field>
+        <field name="inherit_id" ref="hr_holidays.hr_leave_allocation_view_kanban" />
+        <field name="arch" type="xml">
+            <kanban position="replace">
+
+                <kanban class="o_kanban_mobile" create="0">
+                    <field name="employee_id" />
+                    <field name="date_from" />
+                    <field name="date_to" />
+                    <field name="name" />
+                    <field name="number_of_days" />
+                    <field name="can_approve" />
+                    <field name="state" />
+                    <field name="holiday_status_id" />
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_global_click container">
+                                <div class="row no-gutters">
+                                    <div class="col-2">
+                                        <img
+                                            t-att-src="kanban_image('hr.employee', 'image_128', record.employee_id.raw_value)"
+                                            t-att-title="record.employee_id.value"
+                                            t-att-alt="record.employee_id.value"
+                                            class="oe_kanban_avatar o_image_40_cover float-left mr4"
+                                        />
+                                    </div>
+                                    <div class="col-10">
+                                        <span class="badge badge-pill float-right mt4 mr16">
+                                            <t t-esc="record.number_of_days.value" />
+                                            days
+                                        </span>
+                                        <strong class="o_kanban_record_title">
+                                            <t t-esc="record.employee_id.value" />
+                                        </strong>
+                                        <div class="text-muted o_kanban_record_subtitle">
+                                            <t t-esc="record.holiday_status_id.value" />
+                                        </div>
+                                        <div class="o_dropdown_kanban dropdown" groups="base.group_user">
+                                            <a
+                                                role="button"
+                                                class="dropdown-toggle o-no-caret btn"
+                                                data-toggle="dropdown"
+                                                href="#"
+                                                aria-label="Dropdown menu"
+                                                title="Dropdown menu"
+                                            >
+                                                <span class="fa fa-ellipsis-v" />
+                                            </a>
+                                            <div class="dropdown-menu" role="menu">
+                                                <a
+                                                    t-if="widget.editable"
+                                                    role="menuitem"
+                                                    type="edit"
+                                                    class="dropdown-item"
+                                                >Edit Allocation
+                                                </a>
+                                                <a
+                                                    t-if="widget.deletable"
+                                                    role="menuitem"
+                                                    type="delete"
+                                                    class="dropdown-item"
+                                                >Delete
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row no-gutters" t-if="['done', 'refuse'].includes(record.state.raw_value)">
+                                    <div class="col-2" />
+                                    <div class="col-10">
+                                        <span
+                                            t-if="record.state.raw_value === 'done'"
+                                            class="fa fa-check text-muted"
+                                            aria-label="done"
+                                        />
+                                        <span t-else="" class="fa fa-ban text-muted" />
+                                        <span class="text-muted">
+                                            <field name="stage_id" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+
+            </kanban>
+        </field>
+    </record>
+
+    <!--menu & action for self services-->
+
+    <record id="hr_leave_allocation_action_my_service" model="ir.actions.act_window">
+        <field name="name">Allocations</field>
+        <field name="res_model">hr.leave.allocation</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('employee_id.user_id','=', uid)]</field>
+        <field name="context">{'no_display_create_edit':True}</field>
+
+    </record>
+
+    <menuitem
+        id="hr_leave_allocation_menu_my_service"
+        sequence="1"
+        parent="hr_leave_menu_root_my"
+        action="hr_leave_allocation_action_my_service"
+    />
+
+</odoo>

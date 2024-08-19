@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+
+    <!-- Stages demo -->
+
+    <record id="hr_leave_stage_draft" model="request.stage">
+        <field name="name">Draft</field>
+        <field name="res_model_id" ref="hr_holidays.model_hr_leave" />
+        <field name="sequence">1</field>
+        <field name="res_model">hr.leave</field>
+        <field name="state">draft</field>
+    </record>
+
+    <record id="hr_leave_stage_validate" model="request.stage">
+        <field name="name">Validate</field>
+        <field name="res_model_id" ref="hr_holidays.model_hr_leave" />
+        <field name="sequence">2</field>
+        <field name="res_model">hr.leave</field>
+        <field name="state">in_progress</field>
+    </record>
+
+    <record id="hr_leave_stage_done" model="request.stage">
+        <field name="name">Done</field>
+        <field name="res_model_id" ref="hr_holidays.model_hr_leave" />
+        <field name="sequence">4</field>
+        <field name="res_model">hr.leave</field>
+        <field name="state">done</field>
+    </record>
+
+    <record id="hr_leave_stage_refuse" model="request.stage">
+        <field name="name">Refused</field>
+        <field name="res_model_id" ref="hr_holidays.model_hr_leave" />
+        <field name="sequence">5</field>
+        <field name="res_model">hr.leave</field>
+        <field name="state">cancel</field>
+    </record>
+
+        <!-- Stages demo for allocation -->
+
+    <record id="hr_leave_allocation_stage_draft" model="request.stage">
+        <field name="name">Draft</field>
+        <field name="res_model_id" ref="hr_holidays.model_hr_leave_allocation" />
+        <field name="sequence">1</field>
+        <field name="res_model">hr.leave.allocation</field>
+        <field name="state">draft</field>
+    </record>
+
+    <record id="hr_leave_allocation_stage_validate" model="request.stage">
+        <field name="name">Validate</field>
+        <field name="res_model_id" ref="hr_holidays.model_hr_leave_allocation" />
+        <field name="sequence">2</field>
+        <field name="res_model">hr.leave.allocation</field>
+        <field name="state">in_progress</field>
+    </record>
+
+    <record id="hr_leave_allocation_stage_done" model="request.stage">
+        <field name="name">Done</field>
+        <field name="res_model_id" ref="hr_holidays.model_hr_leave_allocation" />
+        <field name="sequence">4</field>
+        <field name="res_model">hr.leave.allocation</field>
+        <field name="state">done</field>
+    </record>
+
+    <record id="hr_leave_allocation_stage_refuse" model="request.stage">
+        <field name="name">Refused</field>
+        <field name="res_model_id" ref="hr_holidays.model_hr_leave_allocation" />
+        <field name="sequence">5</field>
+        <field name="res_model">hr.leave.allocation</field>
+        <field name="state">cancel</field>
+    </record>
+
+</odoo>

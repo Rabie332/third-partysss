@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_holidays_status_user,hr.holidays.status user,model_hr_leave_type,hr_holidays.group_hr_holidays_user,1,1,0,0
+access_hr_leave_report_calendar_user,hr.hr_leave_report_calendar_user,hr_holidays.model_hr_leave_report_calendar,base.group_user,1,0,0,0

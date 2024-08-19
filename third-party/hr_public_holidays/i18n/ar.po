@@ -1,0 +1,403 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_public_holidays
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-16 09:36+0000\n"
+"PO-Revision-Date: 2020-07-16 09:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__date_to
+msgid " To"
+msgstr "إلى"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__message_needaction
+msgid "Action Needed"
+msgstr "الإجراءات اللازمة"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__activity_ids
+msgid "Activities"
+msgstr "الأنشطة"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "نشاط استثناء الديكور"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__employee_id
+msgid "Applicant"
+msgstr "الموظف"
+
+#. module: hr_public_holidays
+#: model:mail.message.subtype,name:hr_public_holidays.mt_hr_public_holiday_approved
+msgid "Approved"
+msgstr "أعتمد"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: hr_public_holidays
+#: model:ir.ui.menu,name:hr_public_holidays.hr_public_holiday_configuration
+msgid "Configuration"
+msgstr "إعدادات"
+
+#. module: hr_public_holidays
+#: model_terms:ir.ui.view,arch_db:hr_public_holidays.hr_public_holiday_form
+msgid "Convert days of absence"
+msgstr "تحويل أيام الغياب"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: hr_public_holidays
+#: model_terms:ir.ui.view,arch_db:hr_public_holidays.hr_public_holiday_view_kanban
+msgid "Date From :"
+msgstr "من التاريخ:"
+
+#. module: hr_public_holidays
+#: model_terms:ir.ui.view,arch_db:hr_public_holidays.hr_public_holiday_view_kanban
+msgid "Date To :"
+msgstr "إلى التاريخ:"
+
+#. module: hr_public_holidays
+#: code:addons/hr_public_holidays/models/hr_public_holiday.py:0
+#, python-format
+msgid "Dates overlap with a previous holiday"
+msgstr "هناك تداخل في التواريخ مع عيد/عطلة سابقة"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__department_id
+msgid "Department"
+msgstr "القسم"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__display_button_accept
+msgid "Display Button Accept"
+msgstr ""
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__display_button_refuse
+msgid "Display Button Refuse"
+msgstr ""
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__display_button_send
+msgid "Display Button Send"
+msgstr ""
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__display_name
+msgid "Display Name"
+msgstr "الإسم"
+
+#. module: hr_public_holidays
+#: model:request.stage,name:hr_public_holidays.hr_public_holiday_stage_done
+msgid "Done"
+msgstr "تم"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__absent_multip_percent
+msgid "Double the day of absence by (%)"
+msgstr " مضاعفة يوم غياب بنسبة (%)"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__number_of_days
+msgid "Duration by day"
+msgstr "المدة باليوم"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__name
+msgid "Eid / Holiday"
+msgstr "العيد/العطلة"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__message_follower_ids
+msgid "Followers"
+msgstr "متابعون"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "المتابعون (القنوات)"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__date_from
+msgid "From"
+msgstr "من"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__activity_exception_icon
+msgid "Icon"
+msgstr "أيقونة"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,help:hr_public_holidays.field_hr_public_holiday__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr " أيقونة للإشارة إلى نشاط مستثنى ."
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,help:hr_public_holidays.field_hr_public_holiday__message_needaction
+#: model:ir.model.fields,help:hr_public_holidays.field_hr_public_holiday__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديد ذلك ، فإن الرسائل الجديدة تتطلب اهتمامك."
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,help:hr_public_holidays.field_hr_public_holiday__message_has_error
+#: model:ir.model.fields,help:hr_public_holidays.field_hr_public_holiday__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديده ، فبعض الرسائل بها خطأ في التسليم."
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__message_is_follower
+msgid "Is Follower"
+msgstr "هو متابع"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__job_id
+msgid "Job"
+msgstr "المهنة"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__kanban_color
+msgid "Kanban Color Index"
+msgstr "مؤشر لون كانبان"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__manager_id
+msgid "Manager"
+msgstr "المدير المباشر"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__message_ids
+msgid "Messages"
+msgstr "رسائل"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "أخر موعد لنشاط التالي"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: hr_public_holidays
+#: model_terms:ir.ui.view,arch_db:hr_public_holidays.hr_public_holiday_view_kanban
+msgid "Number of days :"
+msgstr "عدد الأيام :"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الاخطاء"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,help:hr_public_holidays.field_hr_public_holiday__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب إجراء"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,help:hr_public_holidays.field_hr_public_holiday__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل مع خطأ التسليم"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,help:hr_public_holidays.field_hr_public_holiday__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل غير المقروءة"
+
+#. module: hr_public_holidays
+#: model:ir.actions.act_window,name:hr_public_holidays.action_hr_public_holiday
+#: model:ir.actions.act_window,name:hr_public_holidays.action_hr_public_holiday_drive_actions
+#: model:ir.ui.menu,name:hr_public_holidays.hr_public_holiday_menu
+#: model:ir.ui.menu,name:hr_public_holidays.hr_public_holiday_menu_drive_actions
+msgid "Official public holidays"
+msgstr "الأعياد و العطل الرسمية"
+
+#. module: hr_public_holidays
+#: model:ir.model,name:hr_public_holidays.model_hr_public_holiday
+msgid "Public Holiday"
+msgstr "الأعياد و العطل"
+
+#. module: hr_public_holidays
+#: model:mail.activity.type,name:hr_public_holidays.mail_hr_public_holiday_approval
+msgid "Public holiday is ready to be approved"
+msgstr "العيد/العطلة جاهز للموافقة عليه"
+
+#. module: hr_public_holidays
+#: model:ir.ui.menu,name:hr_public_holidays.hr_public_holiday_main_menu
+msgid "Public holidays"
+msgstr "الأعياد و العطل"
+
+#. module: hr_public_holidays
+#: model:ir.ui.menu,name:hr_public_holidays.hr_public_holidays_stage_menu
+msgid "Public holidays Stages"
+msgstr "مراحل العيد و العطل الرسمية "
+
+#. module: hr_public_holidays
+#: model:mail.message.subtype,name:hr_public_holidays.mt_hr_public_holiday_refused
+#: model:request.stage,name:hr_public_holidays.hr_public_holiday_stage_refused
+msgid "Refused"
+msgstr "مرفوض"
+
+#. module: hr_public_holidays
+#: model:mail.message.subtype,description:hr_public_holidays.mt_hr_public_holiday_approved
+msgid "Request approved"
+msgstr "تم الموافقة على الطلب"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__date
+msgid "Request date"
+msgstr "تاريخ الطلب"
+
+#. module: hr_public_holidays
+#: model:mail.message.subtype,description:hr_public_holidays.mt_hr_public_holiday_refused
+msgid "Request refused"
+msgstr "طلب مرفوض"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل القصيرة"
+
+#. module: hr_public_holidays
+#: model:request.stage,name:hr_public_holidays.hr_public_holiday_stage_send
+msgid "Send"
+msgstr "إرسال"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__stage_id
+msgid "Stage"
+msgstr "مرحلة"
+
+#. module: hr_public_holidays
+#: model:ir.actions.act_window,name:hr_public_holidays.hr_public_holidays_stage_action
+msgid "Stages"
+msgstr "المراحل"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,help:hr_public_holidays.field_hr_public_holiday__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr "المخطط: الأنشطة المستقبلية."
+
+#. module: hr_public_holidays
+#: code:addons/hr_public_holidays/models/hr_public_holiday.py:0
+#, python-format
+msgid "The date of 'from' should be smaller than the date of 'to'"
+msgstr "تاريخ 'من' يجب ان يكون أصغر من تاريخ الى "
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__days_after_eid_start
+msgid "The period from the end of the holiday (days)"
+msgstr "الفترة من نهاية العيد (أيام)"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__request_type_id
+msgid "Type"
+msgstr "النوع"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,help:hr_public_holidays.field_hr_public_holiday__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع نشاط المستثنى في السجل."
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__message_unread
+msgid "Unread Messages"
+msgstr "رسائل غير مقروءة"
+
+#. module: hr_public_holidays
+#: model:ir.model.fields,field_description:hr_public_holidays.field_hr_public_holiday__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عداد الرسائل غير المقروءة"
+
+#. module: hr_public_holidays
+#: model:request.stage,name:hr_public_holidays.hr_public_holiday_stage_validate
+msgid "Validate"
+msgstr "أعتمد"

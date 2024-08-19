@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<odoo>
+
+    <record id="hr_leave_action_new_custom_request" model="ir.actions.act_window">
+        <field name="name">Dashboard</field>
+        <field name="res_model">hr.leave</field>
+        <field name="view_mode">calendar,tree,form,activity</field>
+        <field name="context">{'short_name': 1}</field>
+        <field name="search_view_id" ref="hr_holidays.hr_leave_view_search_my" />
+        <field
+            name="view_ids"
+            eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'kanban','view_id': ref('hr_leave_view_kanban_inherit')}),
+            (0, 0, {'view_mode': 'tree','view_id': ref('hr_leave_view_tree_inherit')}),
+            (0, 0, {'view_mode': 'form','view_id': ref('hr_leave_view_form_inherit')})]"
+        />
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Keep track of your PTOs.
+            </p>
+            <p>
+                A great way to keep track on your time off requests, sick days, and approval status.
+            </p>
+        </field>
+    </record>
+
+    <record id="hr_holidays.hr_leave_menu_new_request" model="ir.ui.menu">
+        <field name="parent_id" eval="ref('hr_holidays.menu_hr_holidays_root')" />
+        <field name="action" ref="hr_leave_action_new_custom_request" />
+    </record>
+
+    <record id="hr_leave_action_my_request" model="ir.actions.act_window">
+        <field name="name">My Time Off Requests</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hr.leave</field>
+        <field name="view_mode">tree,form,calendar,kanban,activity</field>
+        <field name="context">{}</field>
+        <field name="search_view_id" ref="hr_holidays.hr_leave_view_search_my" />
+        <field name="domain">[('user_id', '=', uid)]</field>
+        <field
+            name="view_ids"
+            eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'tree','view_id': ref('hr_leave_view_tree_inherit')}),
+            (0, 0, {'view_mode': 'form','view_id': ref('hr_leave_view_form_inherit')})]"
+        />
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Keep track of your PTOs.
+            </p>
+            <p>
+                A great way to keep track on your time off requests, sick days, and approval status.
+            </p>
+        </field>
+    </record>
+    <record id="hr_holidays.hr_leave_menu_my" model="ir.ui.menu">
+        <field name="parent_id" eval="ref('hr_holidays.menu_hr_holidays_root')" />
+        <field name="action" ref="hr_leave_action_my_request" />
+    </record>
+
+    <record id="hr_leave_action_my_dashboard" model="ir.actions.act_window">
+        <field name="name">Dashboard</field>
+        <field name="res_model">hr.leave</field>
+        <field name="view_mode">calendar,activity</field>
+        <field name="context">{'my_request' : True}</field>
+        <field name="domain">[('employee_id.user_id', '=', uid)]</field>
+    </record>
+
+    <menuitem
+        id="hr_holidays_dashboard_menu"
+        sequence="3"
+        parent="hr_leave_menu_root_my"
+        action="hr_leave_action_my_dashboard"
+    />
+
+</odoo>

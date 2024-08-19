@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="hr_public_holiday_stage_send" model="request.stage">
+            <field name="name">Send</field>
+            <field name="res_model_id" ref="hr_public_holidays.model_hr_public_holiday" />
+            <field name="sequence">1</field>
+            <field name="res_model">hr.public.holiday</field>
+            <field name="state">draft</field>
+        </record>
+
+        <record id="hr_public_holiday_stage_validate" model="request.stage">
+            <field name="name">Validate</field>
+            <field name="res_model_id" ref="hr_public_holidays.model_hr_public_holiday" />
+            <field name="sequence">2</field>
+            <field name="res_model">hr.public.holiday</field>
+            <field name="state">in_progress</field>
+        </record>
+        <record id="hr_public_holiday_stage_done" model="request.stage">
+            <field name="name">Done</field>
+            <field name="res_model_id" ref="hr_public_holidays.model_hr_public_holiday" />
+            <field name="sequence">3</field>
+            <field name="res_model">hr.public.holiday</field>
+            <field name="state">done</field>
+        </record>
+        <record id="hr_public_holiday_stage_refused" model="request.stage">
+            <field name="name">Refused</field>
+            <field name="res_model_id" ref="hr_public_holidays.model_hr_public_holiday" />
+            <field name="sequence">4</field>
+            <field name="res_model">hr.public.holiday</field>
+            <field name="state">cancel</field>
+        </record>
+    </data>
+</odoo>

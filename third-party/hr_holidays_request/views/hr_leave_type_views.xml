@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<odoo>
+
+    <record id="edit_holiday_status_form_inherit" model="ir.ui.view">
+        <field name="name">hr.leave.type.form.inherit</field>
+        <field name="model">hr.leave.type</field>
+        <field name="inherit_id" ref="hr_holidays.edit_holiday_status_form" />
+        <field name="arch" type="xml">
+            <field name="request_unit" position="after">
+                <field name="availability" />
+                <field name="for_gender" required="1" />
+                <field name="maximum_days" />
+                <field name="is_start_specific_date" />
+                <field name="is_before_specific_date" />
+                <field name="without_current_sold" />
+                <field
+                    name="days_before_specific_date"
+                    invisible="is_before_specific_date == False" required="is_before_specific_date == True"
+                />
+                <field name="attachment_required" />
+                <field name="count_weekend" />
+                <field name="count_public_holidays" />
+                <field name="holidays_including_weekend_public" />
+                <field name="depassed_trial_period" />
+            </field>
+          <group name="leave_validation" position="attributes">
+              <attribute name="invisible">1</attribute>
+
+           </group>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="request_stage_from_view_inherit_hr_holidays_request" model="ir.ui.view">
+        <field name="name">request.stage.form.inherit</field>
+        <field name="model">request.stage</field>
+        <field name="inherit_id" ref="request.request_stage_from_view" />
+        <field name="arch" type="xml">
+            <field name="request_type_ids" position="attributes">
+                <attribute name="invisible">res_model == 'hr.leave'</attribute>
+            </field>
+            <field name="sequence" position="before">
+                <field
+                    name="hr_leave_type_ids"
+                    widget="many2many_tags"
+                    invisible="res_model != 'hr.leave'"
+                />
+            </field>
+        </field>
+    </record>
+
+    <record id="hr_leave_stage_action" model="ir.actions.act_window">
+        <field name="name">Stages</field>
+        <field name="res_model">request.stage</field>
+        <field name="view_mode">tree,kanban,form</field>
+        <field name="domain">[('res_model_id.model', '=', 'hr.leave')]</field>
+        <field name="context">{'default_res_model':'hr.leave'}</field>
+    </record>
+
+    <menuitem
+        id="hr_leave_stage_menu"
+        action="hr_leave_stage_action"
+        groups="request.group_stages_manager"
+        name="Time off Stages"
+        parent="hr_holidays.menu_hr_holidays_configuration"
+        sequence="100"
+    />
+
+    <record id="hr_leave_allocation_stage_action" model="ir.actions.act_window">
+        <field name="name">Stages</field>
+        <field name="res_model">request.stage</field>
+        <field name="view_mode">tree,kanban,form</field>
+        <field name="domain">[('res_model_id.model', '=', 'hr.leave.allocation')]
+        </field>
+        <field name="context">{'default_res_model':'hr.leave.allocation'}</field>
+    </record>
+
+    <menuitem
+        id="hr_leave_allocation_stage_menu"
+        action="hr_leave_allocation_stage_action"
+        groups="request.group_stages_manager"
+        name="Allocation Stages"
+        parent="hr_leave_allocation_menu_root"
+        sequence="2"
+    />
+</odoo>

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<odoo>
+
+    <record id="action_accept_holidays_requests" model="ir.actions.server">
+        <field name="name">Accept</field>
+        <field name="model_id" ref="hr_holidays_request.model_hr_leave" />
+        <field name="binding_model_id" ref="hr_holidays_request.model_hr_leave" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">
+            if records:
+            action = records.open_multi_accept_wizard()
+        </field>
+    </record>
+
+
+
+    <record id="action_refuse_holidays_requests" model="ir.actions.server">
+        <field name="name">Refuse</field>
+        <field name="model_id" ref="hr_holidays_request.model_hr_leave" />
+        <field name="binding_model_id" ref="hr_holidays_request.model_hr_leave" />
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">
+            if records:
+            action = records.open_multi_refuse_wizard()
+        </field>
+    </record>
+
+    <record id="hr_holidays.menu_hr_holidays_root" model="ir.ui.menu">
+        <field name="sequence">20</field>
+        <field name="parent_id" eval="ref('hr.menu_hr_root')" />
+        <field
+            name="groups_id"
+            eval="[(4, ref('hr_holidays.group_hr_holidays_manager')), (4, ref('hr_holidays.group_hr_holidays_user'))]"
+        />
+    </record>
+
+    <menuitem
+        name="Allocations"
+        id="hr_leave_allocation_menu_root"
+        sequence="4"
+        parent="hr_holidays.menu_hr_holidays_root"
+    />
+
+    <menuitem
+        id="hr_leave_allocation_menu"
+        name="Allocations"
+        parent="hr_leave_allocation_menu_root"
+        action="hr_holidays.hr_leave_allocation_action_all"
+        sequence="1"
+    />
+
+    <!-- <record model="ir.ui.menu" id="hr_holidays.menu_hr_holidays_approvals">
+        <field name="groups_id" eval="[(6,0,[ref('make_invisible')])]" />
+    </record> -->
+
+    <record id="hr_holidays.menu_open_allocation" model="ir.ui.menu">
+        <field name="parent_id" eval="ref('hr_holidays.menu_hr_holidays_root')" />
+        <field name="sequence">1</field>
+    </record>
+    <!-- Self services menu -->
+
+    <menuitem id="hr_leave_menu_root_my" name="Time off" sequence="2" parent="request.self_services_menu" />
+    <!--hide activity type menu-->
+    <record id="hr_holidays.hr_holidays_menu_config_activity_type" model="ir.ui.menu">
+        <field name="active" eval="False" />
+    </record>
+</odoo>

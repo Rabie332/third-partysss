@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <menuitem id="hr_public_holiday_main_menu" name="Public holidays" parent="hr.menu_hr_root" sequence="30" />
+
+    <record model="ir.ui.view" id="hr_public_holiday_tree">
+        <field name="name">hr.public.holiday.tree</field>
+        <field name="model">hr.public.holiday</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree name="Official public holidays">
+                <field name="name" />
+                <field name="date_from" />
+                <field name="date_to" />
+                <field name="number_of_days" />
+                <field name="stage_id" />
+                <field name="state" invisible="1" />
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="hr_public_holiday_form">
+        <field name="name">hr.public.holiday.form</field>
+        <field name="model">hr.public.holiday</field>
+        <field name="mode">primary</field>
+        <field name="inherit_id" ref="request.request_view_form" />
+        <field name="arch" type="xml">
+            <sheet position="inside">
+                <group col="4">
+                    <field name="name" />
+                    <newline />
+                    <field name="date_from" />
+                    <field name="date_to" />
+                    <field name="number_of_days" />
+                </group>
+                <div class="o_horizontal_separator">
+                    Convert days of absence
+                </div>
+                <group col="4">
+                    <field name="absent_multip_percent" />
+                    <field name="days_after_eid_start" />
+                </group>
+            </sheet>
+        </field>
+    </record>
+
+    <record id="hr_public_holiday_view_kanban" model="ir.ui.view">
+        <field name="name">hr.public.holiday.kanban</field>
+        <field name="model">hr.public.holiday</field>
+        <field name="mode">primary</field>
+        <field name="inherit_id" ref="request.request_view_kanban" />
+        <field name="arch" type="xml">
+            <div name="card_body" position="inside">
+                <br />
+                <span name="date_from" t-if="record.date_from.raw_value">Date From :
+                    <field name="date_from" />
+                    <br />
+                </span>
+                <span name="date_to" t-if="record.date_to.raw_value">Date To :
+                    <field name="date_to" />
+                    <br />
+                </span>
+                <span name="number_of_days" t-if="record.number_of_days.raw_value">Number of days :
+                    <field name="number_of_days" />
+                    <br />
+                </span>
+            </div>
+
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_hr_public_holiday">
+        <field name="name">Official public holidays</field>
+        <field name="res_model">hr.public.holiday</field>
+        <field name="view_mode">kanban,tree,form</field>
+    </record>
+
+    <menuitem
+        id="hr_public_holiday_menu"
+        name="Official public holidays"
+        sequence="1"
+        parent="hr_public_holiday_main_menu"
+        action="action_hr_public_holiday"
+    />
+
+    <!--    Stage -->
+
+    <record id="hr_public_holidays_stage_action" model="ir.actions.act_window">
+        <field name="name">Stages</field>
+        <field name="res_model">request.stage</field>
+        <field name="view_mode">tree,kanban,form</field>
+        <field name="domain">[('res_model_id.model', '=', 'hr.public.holiday')]</field>
+        <field name="context">{'default_res_model':'hr.public.holiday'}</field>
+    </record>
+
+    <menuitem
+        id="hr_public_holidays_stage_menu"
+        action="hr_public_holidays_stage_action"
+        name="Public holidays Stages"
+        groups="request.group_stages_manager"
+        parent="hr_public_holiday_main_menu"
+    />
+
+     <!--    Drive Actions Holidays Menu & Action -->
+
+     <record model="ir.ui.view" id="hr_public_holiday_tree_drive_actions">
+        <field name="name">hr.public.holiday.tree.drive.actiond</field>
+        <field name="model">hr.public.holiday</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree create="0" edit="0" name="Official public holidays">
+                <field name="name" />
+                <field name="date_from" />
+                <field name="date_to" />
+                <field name="stage_id" />
+                <field name="state" invisible="1" />
+            </tree>
+        </field>
+    </record>
+
+     <record model="ir.actions.act_window" id="action_hr_public_holiday_drive_actions">
+        <field name="name">Official public holidays</field>
+        <field name="res_model">hr.public.holiday</field>
+        <field name="context">{'group_by':'stage_id'}</field>
+        <field
+            name="view_ids"
+            eval="[(5, 0, 0),
+                         (0, 0, {'view_mode': 'tree', 'view_id': ref('hr_public_holidays.hr_public_holiday_tree_drive_actions')})]"
+        />
+    </record>
+
+    <menuitem
+        id="hr_public_holiday_menu_drive_actions"
+        sequence="8"
+        parent="request.self_service_menu_drive_action"
+        action="action_hr_public_holiday_drive_actions"
+    />
+
+</odoo>

@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<odoo>
+
+    <record id="view_hr_holidays_filter_report_inherit" model="ir.ui.view">
+        <field name="name">hr.holidays.filter.inherit</field>
+        <field name="model">hr.leave.report</field>
+        <field name="inherit_id" ref="hr_holidays.view_hr_holidays_filter_report" />
+        <field name="arch" type="xml">
+
+            <filter name="approve" position="attributes">
+                <attribute name="domain">[('state', '=', 'in_progress')]</attribute>
+            </filter>
+
+            <filter name="validated" position="attributes">
+                <attribute name="domain">[('state', '=', 'done')]</attribute>
+            </filter>
+
+        </field>
+    </record>
+
+</odoo>

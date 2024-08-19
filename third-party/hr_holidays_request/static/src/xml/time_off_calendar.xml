@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template_inherit_holidays_request" inherit_id="hr_holidays.template">
+    <t t-extend="hr_holidays.dashboard.calendar.button">
+        <t t-jquery=".btn-allocation" t-operation="replace" />
+    </t>
+</templates>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+
+    <!-- <record id="mail_hr_public_holiday_approval" model="mail.activity.type">
+        <field name="name">Public holiday is ready to be approved</field>
+        <field name="icon">fa-sun-o</field>
+        <field name="res_model_id" ref="hr_public_holidays.model_hr_public_holiday" />
+        <field name="category">validation</field>
+    </record> -->
+
+     <!-- <record id="mail_hr_public_holiday_approval" model="mail.activity.type">
+        <field name="name">Public holiday is ready to be approved</field>
+        <field name="icon">fa-sun-o</field>
+        <field name="res_model">hr.public_holiday</field>
+        <field name="category">validation</field>
+    </record> -->
+
+        <!-- Request-related subtypes for messaging / Chatter -->
+
+    <record id="mt_hr_public_holiday_approved" model="mail.message.subtype">
+        <field name="name">Approved</field>
+        <field name="res_model">hr.public.holiday</field>
+        <field name="description">Request approved</field>
+    </record>
+
+    <record id="mt_hr_public_holiday_refused" model="mail.message.subtype">
+        <field name="name">Refused</field>
+        <field name="res_model">hr.public.holiday</field>
+        <field name="description">Request refused</field>
+    </record>
+
+</odoo>
